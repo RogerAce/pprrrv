@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Super Search </title>
+<link rel="shortcut icon" href="img/fcon.jpg" type="image/jpg">
+<style>
+div {
+        background-image: url("img/abc.jpg") ;
+        background-color: #cccccc;
+		background-repeat:no-repeat;
+		background-size: 100% 600px;
+		height: 100%;
+		width: 100%;
+		}
+#a{   
+	width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('img/search-icon.png');
+    background-position:left;
+	
+	background-size: 40px 100% ;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+	
+}
+</style>
+</head>
+<body>
+<div>
+<p>
+<input id="a" name="a" type="text"  placeholder=" Type in"></p>
+<script>
+var a=document.getElementById("a");
+/*a.addEventListener("keydown", function(e) {
+    if (!e) { var e = window.event; }
+
+    if (e.keyCode == 13) { window.location.assign("Search.html?a="+a.value); }
+}, false);*/
+if (!e) { var e = window.event; } 
+	a.addEventListener("keydown",fun(e),false);
+   function fun(e)
+   { if(e.keyCode == 13) 
+   { window.loctaion="search.html?a="+a.value;}
+  }
+
+</script>
+</div>
+</body>
+</html>
+<script>
+</script>
